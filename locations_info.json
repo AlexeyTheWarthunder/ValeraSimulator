@@ -1,0 +1,61 @@
+{
+    "location_start": {
+        "id": "location_start",
+        "name": "Начальная локация",
+        "next_location_true": "location_shop"
+    },
+    "location_shop": {
+        "id": "location_shop",
+        "name": "Магазин",
+        "next_location_true": "location_home",
+        "next_location_false": "location_garages_backside"
+    },
+    "location_home": {
+        "id": "location_home",
+        "name": "Дом",
+        "next_location_true": "good_ending_1",
+        "next_location_false": "bossfight_marfa"
+    },
+    "location_garages_backside": {
+        "id": "location_garages_backside",
+        "name": "За гаражами",
+        "next_location_true": "bossfight_zina",
+        "next_location_false": "bad_ending_2"
+    },
+    "bossfight_marfa": {
+        "id": "bossfight_marfa",
+        "name": "Босс: Баба Марфа",
+        "next_location_true": "good_ending_2",
+        "next_location_false": "bad_ending_1"
+    },
+    "bossfight_zina": {
+        "id": "bossfight_zina",
+        "name": "Босс: Тётя Зина",
+        "next_location_true": "good_ending_3",
+        "next_location_false": "bad_ending_3"
+    },
+    "good_ending_1": {
+        "id": "good_ending_1",
+        "name": "Хорошая концовка №1"
+    },
+    "good_ending_2": {
+        "id": "good_ending_2",
+        "name": "Хорошая концовка №2"
+    },
+    "good_ending_3": {
+        "id": "good_ending_3",
+        "name": "Хорошая концовка №3"
+    },
+    "bad_ending_1": {
+        "id": "bad_ending_1",
+        "name": "Плохая концовка №1"
+    },
+    "bad_ending_2": {
+        "id": "bad_ending_2",
+        "name": "Плохая концовка №2"
+    },
+    "bad_ending_3": {
+        "id": "bad_ending_3",
+        "name": "Плохая концовка №3"
+    }
+}
