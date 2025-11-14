@@ -2,60 +2,84 @@
     "location_start": {
         "id": "location_start",
         "name": "Начальная локация",
-        "next_location_true": "location_shop"
+        "lore": "старт",
+        "question": "None",
+        "next_location": "location_shop"
     },
     "location_shop": {
         "id": "location_shop",
         "name": "Магазин",
+        "lore": "магаз",
+        "question": "почему?",
+        "answers": ["1) Ответ 1", "2) Ответ 2"],
+        "true_answer": 1,
         "next_location_true": "location_home",
         "next_location_false": "location_garages_backside"
     },
     "location_home": {
         "id": "location_home",
         "name": "Дом",
+        "lore": "дом",
+        "question": "вопрос",
+        "answers": ["1) Да", "2) Нет"],
+        "true_answer": 1,
         "next_location_true": "good_ending_1",
         "next_location_false": "bossfight_marfa"
     },
     "location_garages_backside": {
         "id": "location_garages_backside",
         "name": "За гаражами",
+        "lore": "забив",
+        "question": "че делать че делать мама пришла",
+        "answers": ["1) допустим", "2) аннигилятор-3000"],
+        "true_answer": 1,
         "next_location_true": "bossfight_zina",
         "next_location_false": "bad_ending_2"
     },
     "bossfight_marfa": {
         "id": "bossfight_marfa",
         "name": "Босс: Баба Марфа",
+        "lore": "потапыч",
+        "question": "boss",
         "next_location_true": "good_ending_2",
         "next_location_false": "bad_ending_1"
     },
     "bossfight_zina": {
         "id": "bossfight_zina",
         "name": "Босс: Тётя Зина",
+        "lore": "нет я не буду устанавливать Макс",
+        "question": "boss",
         "next_location_true": "good_ending_3",
         "next_location_false": "bad_ending_3"
     },
     "good_ending_1": {
         "id": "good_ending_1",
-        "name": "Хорошая концовка №1"
+        "name": "Хорошая концовка №1",
+        "lore": "хк 1"
     },
     "good_ending_2": {
         "id": "good_ending_2",
-        "name": "Хорошая концовка №2"
+        "name": "Хорошая концовка №2",
+        "lore": "хк 1"
     },
     "good_ending_3": {
         "id": "good_ending_3",
-        "name": "Хорошая концовка №3"
+        "name": "Хорошая концовка №3",
+        "lore": "хк 3"
     },
     "bad_ending_1": {
         "id": "bad_ending_1",
-        "name": "Плохая концовка №1"
+        "name": "Плохая концовка №1",
+        "lore": "бк 1"
     },
     "bad_ending_2": {
         "id": "bad_ending_2",
-        "name": "Плохая концовка №2"
+        "name": "Плохая концовка №2",
+        "lore": "бк 2"
     },
     "bad_ending_3": {
         "id": "bad_ending_3",
-        "name": "Плохая концовка №3"
+        "name": "Плохая концовка №3",
+        "lore": "бк 3"
     }
 }
